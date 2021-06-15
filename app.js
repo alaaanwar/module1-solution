@@ -7,3 +7,6 @@
     $scope.msg = "Check If Too Much";
 
 });
+
+
+})();
