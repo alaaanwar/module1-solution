@@ -4,7 +4,7 @@
 
   .controller('LunchCheckController', function($scope){
 
-    $scope.name = "Yakoov";
+    $scope.msg = "Check If Too Much";
 
     var x1 = function () {
   // do something, PLEASE!
