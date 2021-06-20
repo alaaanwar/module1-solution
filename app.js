@@ -14,31 +14,31 @@
 
     $scope.myFunc = function() {
 
-      //console.log("value is:"+$scope.name);
-      if($scope.name==''|| $scope.name=='undefined')
-      $scope.msg="Please enter data first";
-      else {
+//$scope.name='';
 
-        const words = $scope.name.split(',');
-        //console.log("name"+ $scope.name);
+      console.log("value is:"+$scope.name);
 
-        var counter=0;
+      if($scope.name=='')
+        $scope.msg="Please enter data first";
 
-          for(var i=0; i< words.length; i++)
-          counter++;
+        else {
 
-          //console.log("counter"+counter);
+          const words = $scope.name.split(',');
+          //console.log("name"+ $scope.name);
 
-            if(counter<=3)
-                $scope.msg ="Enjoy!";
-            else {
-              $scope.msg ="Too much";
-            }
+          var counter=0;
 
-      }
+            for(var i=0; i< words.length; i++)
+            counter++;
 
+            //console.log("counter"+counter);
 
+              if(counter<=3)
+                  $scope.msg ="Enjoy!";
+              else
+                $scope.msg ="Too much";
 
+        }
     };
 
 

@@ -10,12 +10,18 @@
     <h1>Hello Coursera students!</h1>
 
     <div ng-controller="LunchCheckController">
-      <input type="text" ng-model="name" value="" />
+      <input type="text" ng-model="name" ng-init="name =''"/>
 
-      <input type="button" ng-model="check"  ng-click="myFunc()"
+      <input type="button" ng-model="check" value="Check If Too Much"
+      ng-click="myFunc()"
       >
 
-      Message : {{msg}}
+            Message : {{msg}}
+
+      <div class="">
+        We do NOT consider and empty item.
+      </div>
+
     </div>
   </body>
 </html>
